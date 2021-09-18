@@ -1,0 +1,206 @@
+@charset "EUC-KR";
+
+
+#bbs-view {
+	box-sizing: border-box;	
+	width:100%
+}
+
+/* 게시판 공통 헤더 */
+.bbs-view-header {
+	padding : 0 20px;
+	height:35px;
+	line-height: 35px;
+}
+/* 글쓰기 버튼 */
+.bbs-view-header .btn {
+	float:right; 
+	margin: 0;
+	visibility:visible;
+}
+/* 타이틀 */
+#bbs-view-title {
+	text-align : left;
+	display: block;
+	font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left : 20px;
+	word-break: break-all;
+	font-weight: medium;
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #ffffff;
+}
+/* 작성자~조회수 */
+#bbs-view-info {
+	padding: 10px 20px;
+	border-bottom: 1px solid #dae1e6;
+	color: #777;
+	display : flex;
+	align-items : center;
+	background-color:#ffffff;
+}
+
+#bbs-view-info strong {
+	margin: 0 10px 0 0;
+	font-weight: normal;
+	font-size : 11pt;
+}
+#bbs-view-info span {
+	color : black;
+	font-weight : bold;
+	font-size : 13pt;
+}
+#bbs-view-info .info-profile {
+	width : 60px;
+	height : 60px;
+	border-radius : 50%;
+}
+#bbs-view-info .info-hit {
+	margin-left : auto;
+	color: #888
+}
+/*게시글 본문*/
+#bbs-view-con-holder {
+	min-height: 200px;
+	height: auto !important;
+	height: 200px;
+	padding-top: 10px;
+	padding-bottom:20px;
+	border-bottom: 1px solid #dae1e6;
+	background-color: #ffffff;
+}
+
+/*게시글 본문 시작*/
+#bbs-view-con {
+	width: 100%;
+	line-height: 1.7em;
+	min-height: 200px;
+	word-break: break-all;
+	overflow: hidden;
+	padding:20px;
+}
+
+#bbs-view-con a {
+	color: #000;
+	text-decoration: underline
+}
+
+#bbs-view-con img {
+	max-width: 100%;
+	height: auto
+}
+/*게시물 끝 */
+
+/*목록 버튼*/
+#bbs-view-btn-holder {
+	margin: 10px;
+	display: flex;
+	justify-content : flex-end;
+}
+#bbs-view-btn-holder #comment {
+	margin-right : auto;
+}
+/* 댓글 */
+
+#comment-w-holder {
+	padding: 0 20px;
+	padding-bottom : 20px;
+	color: #777;
+	background-color:#ffffff;
+}
+
+#comment-w-holder .comment-w {
+	resize : none;
+	border : 1px solid #dae1e6;
+	width : 98%;
+	height:100px; 
+	margin: 10px auto;
+    padding: 10px;
+    vertical-align: middle;
+}
+#comment-w-holder #comment-btn{
+	text-align : right;
+	padding-right : 20px;
+}
+#comment-w-holder #submit{
+	background-color : yellowgreen;
+	width : 75px;
+	height : 35px;
+	color : white;
+	border : none;
+	cursor : pointer;
+}
+#comment-holder{
+	padding: 10px 30px;
+	border-top: 1px solid #dae1e6;
+	color: #777;
+	background-color:#ffffff;
+}
+#comment-holder #comment-info{
+	display : flex;
+	align-items : center;
+}
+#comment-holder .comment-info{
+	font-weight : normal;
+	margin-left : 10px;
+	margin-right : 0px;
+	font-size : 10pt;
+}
+#comment-holder .comment-profile{
+	width : 40px;
+	height : 40px;
+	border-radius : 50%;
+}
+#comment-holder .comment-info span{
+	color : black;
+	font-weight : bold;
+	font-size : 11pt;
+}
+.comment {
+	padding : 10px 0;
+	width: 70%;
+    /* height: 412px; */
+    display: inline-block;
+    /* padding: 10px; */
+}
+#comment-view{
+	display : block;
+}
+/* 버튼 */
+.btn {
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+	 background-color: white;
+	 color : #F29228;
+	 border: 1px solid rgba(0,0,0,.12);
+	 border-radius : 10px;
+	 display: inline-block;
+	 margin: 10px 5px;
+	 padding: 0px;
+	 width: 75px;
+	 height: 35px;
+	 font-size: 14px;
+	 font-weight: bold;
+	 cursor: pointer;
+	 opacity: 1;
+	 visibility: visible;
+	 -webkit-transition: all 0.3s ease;
+}
+
+.btn:hover{
+	 transition: all 0.3s ease;
+	 border : none;
+	 background-color: #689D79;
+	 color: rgba(256, 256, 256, 1);
+}
+
+#btn-write {
+	border : 1px solid #689D79;
+}
+
+.comment-view{
+	display : none;
+}
+.comment-view.active{
+	display : block;
+}		
